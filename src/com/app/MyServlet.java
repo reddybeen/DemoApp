@@ -16,5 +16,11 @@ public class MyServlet extends HttpServlet {
 		
 		response.getWriter().println("Hi");
 	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	
+		resp.getWriter().println("Hello");
+	}
 
 }
